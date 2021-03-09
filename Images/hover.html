@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        .pics .imagePlaceholder {
+            background-image: url(img/babycat.jpg);
+            width: 500px;
+            height: 300px;
+        }
+        .pics .imagePlaceholder:hover {
+            background-image: url(img/babydogs.jpg);
+            background-size: contain;
+        }
+
+        .pics .image {
+            opacity: 0;
+        }
+
+        .pics .imagePlaceholder:hover .image {
+            opacity: 1;
+            position: absolute;
+            right: 0;
+        }
+
+        
+    </style>
+  </head>
+  <body>
+      <div class="pics">
+          <div class="imagePlaceholder">
+          <img src="img/babyrabbit.jpg" alt="Katze" width="200" height="auto" class="image"/>
+        </div>
+      </div>
+      
+      </body>
+      </html>
