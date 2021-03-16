@@ -1,0 +1,17 @@
+body {
+    background: red;
+    font-size: 50px;
+}
+
+.container {
+    background: #fef7ea;
+    font-family: Times, sans-serif;
+    font-weight: bold;
+    max-width: 1000px;
+    height: 712px;
+    margin: 0 auto;
+    padding-top: 10px;
+    color: #201d14;
+    background: url(img/jan-tschychold-cri_000000007748.jpg);
+    background-size: cover;
+}
