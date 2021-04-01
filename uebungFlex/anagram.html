@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Flexbox Anagram</title>
+
+    <style>
+        .flex {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background: black;
+        }
+        
+        .box div {
+            font-size: 60px;
+            /* width: 50%; */
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1;
+            display: flex;
+            background: red;
+            border: 1px dotted black;
+            padding: 10px;
+            height: 60px;
+            text-transform: uppercase;;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .box {
+                background-color: red;
+            }
+
+            .box div {
+                background-color: black;
+                border-color: red;
+                color: red;
+            }
+
+            .box div:nth-child(1) {
+                order: 2;
+            }
+            .box div:nth-child(2) {
+                order: 1;
+            }
+            .box div:nth-child(3) {
+                order: 7;
+            }
+            .box div:nth-child(4) {
+                order: 5;
+            }
+            .box div:nth-child(5) {
+                order: 3;
+            }
+            .box div:nth-child(6) {
+                order: 6;
+            }
+            .box div:nth-child(7) {
+                order: 4;
+            }
+            .box div:nth-child(8) {
+                order: 8;
+            }
+            .box div:nth-child(9) {
+                order: 9;
+            }
+            .box div:nth-child(10) {
+                order: 10;
+            }
+            .box div:nth-child(11) {
+                order: 11;
+            }
+            .box div:nth-child(12) {
+                order: 12;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="box">
+            <div>a</div>
+            <div>m</div>
+            <div>t</div>
+            <div>e</div>
+            <div>s</div>
+            <div>&nbsp;</div>
+            <div>k</div>
+            <div>r</div>
+            <div>a</div>
+            <div>g</div>
+            <div>e</div>
+            <div>n</div>
+
+        </div>
+    </div>
+</body>
+
+</html>
