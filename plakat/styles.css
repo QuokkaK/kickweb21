@@ -4,11 +4,7 @@ Beige: #fef7ea
 rot: #ed322d
 anthrazit: #201d14
 */
-/*
-.body {
-    margin: 0;
-}
-*/
+
 .container {
     background: #fef7ea;
     font-family: Arial, sans-serif;
@@ -18,12 +14,10 @@ anthrazit: #201d14
     margin: 0 auto;
     padding-top: 10px;
     color: #201d14;
-    /*background: url(img/the-new-typography.jpg);
+   /* background: url(img/the-new-typography.jpg);
     background-size: cover;*/
     /* lösche letzte 2 Zeilen */
     
-
-
     -webkit-animation: rotate-center 0.6s ease-in-out both;
     animation: rotate-center 0.6s ease-in-out both;
         animation-delay: 3s;
@@ -213,6 +207,225 @@ anthrazit: #201d14
 
 .blackBar .bar2 p {
     padding: 14px 53px;
+}
+
+
+/* ------------------ */
+/* --- RESPONSIVE --- */
+/* ------------------ */
+
+@media (max-width: 760px) {
+    .inner {
+        transform: rotate(0deg);
+    }
+
+    .container {
+        height: 95vh;
+        width: 100%;
+        animation: none;
+    }
+
+    .tWrapper {
+        display: flex;
+    }
+
+    .bigT {
+        display: flex;
+        margin-top: 49vh;
+        top: 100%;
+        -moz-transform: scale(1, -1);
+        -webkit-transform: scale(1, -1);
+        -o-transform: scale(1, -1);
+        -ms-transform: scale(1, -1);
+        transform: scale(1, -1);
+        position: absolute;
+        font-size: 110vh;
+        width: 100%;
+        justify-content: center;
+        left: 0;
+        margin-left: 0;
+        transition: none;
+    }
+
+    .bigSize {
+        margin-left: 0;
+        display: flex;
+        flex-flow: column;
+        height: 90vh;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .bigSize .tText {
+        position: absolute;
+        bottom: -70px;
+        display: flex;
+        justify-content: center;
+        font-size: 8vh;
+        width: 100%;
+    }
+
+    .bigSize .bigTitle {
+        transform: rotate(90deg);
+        display: flex;
+        align-self: flex-end;
+        margin-bottom: 280px;
+        justify-content: flex-end;
+        position: relative;
+        left: -40%;
+    }
+
+    .smallSize {
+        display: flex;
+        flex-flow: column;
+        transform: rotate(90deg);
+        align-self: flex-end;
+        align-items: flex-end;
+        height: 63vh;
+        width: 100%;
+        bottom: 150px;
+        justify-content: flex-start;
+        left: -60px;
+        animation: none;
+    }
+
+    .blackBar .bar1, 
+    .blackBar .bar2 {
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        margin-top: 0;
+        position: absolute;
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        z-index: 3;
+        animation: none;
+    }
+
+    .blackBar .bar1 p,
+    .blackBar .bar2 p {
+        padding: 10px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 6px;
+    }
+
+    .blackBar .bar2 {
+        top: 50px;
+    }
+}
+
+@media (max-height: 750px) {
+    .smallSize {
+        height: 43vh;
+        width: 100%;
+        bottom: 150px;
+        justify-content: flex-start;
+        left: 5vh;
+        align-items: center;
+    }
+
+    .blackBar .bar1 {
+        display: none; /* Dieses Element ist unwichtig, da diese Informationen bereits woanders gegeben werden */
+    }
+
+    .blackBar .bar2 {
+        top: 0;
+    }
+
+    .bigSize .tText {
+        font-size: 6vh;
+        padding-bottom: 4vh;
+    }
+
+    .bigSize .bigTitle {
+        left: -30vh;
+    }
+
+    .bigSize .artikel {
+        font-size: 5vh;
+        margin-top: -6px;
+    }
+
+    .bigSize .adj {
+        font-size: 10vh;
+    }
+
+    .smallSize .years {
+        font-size: 32px;
+    }
+}
+
+@media (max-height: 600px) and (max-width: 400px) {
+    
+    .bigSize {
+        display: block;
+        margin-top: 20px;
+        position: static;
+    }
+    
+    .bigSize .bigTitle {
+        transform: rotate(0);
+        left: 0;
+        width: 100%;
+        margin: 0;
+        display: inline;
+        position: static;
+    }
+
+    .bigSize .artikel {
+        margin-top: 0;
+        margin-left: -4px;
+    }
+
+    .bigSize .adj {
+        font-size: 10vh;
+        margin-top: 0;
+        margin-left: 0;
+        line-height: 0.8;
+    }
+
+    .bigSize .tText {
+        position: static;
+        padding-bottom: 0;
+        margin-top: 6vh;
+    }
+
+    .bigT {
+        transform: rotate(0);
+        margin-top: -5vh;
+        top: -100%;
+        font-size: 95vh;
+    }
+
+    .smallSize {
+        transform: rotate(0);
+        background: #000;
+        color: #fef7ea;
+        left: 0;
+        height: auto;
+    }
+
+    .smallSize .title {
+        font-size: 15px;
+        letter-spacing: 0.1em;
+    }
+
+    .smallSize .name {
+        letter-spacing: 0.1em;
+        margin-top: 10px;
+    }
+
+    .smallSize .years {
+        letter-spacing: 0.1em;
+        margin-bottom: 10px;
+    }
+
+    .blackBar {
+        display: none; /* Auch diese Info ist doppelt vorhanden, deswegen ausgeblendet */
+    }
 }
 
 
