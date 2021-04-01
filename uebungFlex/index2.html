@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Flexbox 2</title>
+
+    <style>
+        .flex {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .box div {
+            font-size: 150px;
+            width: 50%;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1;
+            display: flex;
+        }
+
+        .box div:nth-child(2n) {
+            justify-content: flex-end;
+        }
+
+        .box div:nth-child(3), 
+        .box div:nth-child(4) {
+            align-items: flex-end;
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="box">
+            <div>T</div>
+            <div>Y</div>
+            <div>P</div>
+            <div>O</div>
+        </div>
+    </div>
+</body>
+
+</html>
