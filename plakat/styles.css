@@ -214,6 +214,8 @@ anthrazit: #201d14
 /* --- RESPONSIVE --- */
 /* ------------------ */
 
+/* Das Ganze wurde bis zu einer Bildschirmbreite von min. 300px optimiert */
+
 @media (max-width: 760px) {
     .inner {
         transform: rotate(0deg);
@@ -317,14 +319,20 @@ anthrazit: #201d14
     }
 }
 
-@media (max-height: 750px) {
+@media (max-width: 760px) and (max-height: 750px) {
     .smallSize {
         height: 43vh;
-        width: 100%;
         bottom: 150px;
         justify-content: flex-start;
-        left: 5vh;
         align-items: center;
+        position: absolute;
+        right: 60px;
+        width: 100%;
+        left: 60px;
+    }
+
+    .smallSize .name {
+        margin-top: 0;
     }
 
     .blackBar .bar1 {
@@ -335,13 +343,20 @@ anthrazit: #201d14
         top: 0;
     }
 
+    .bigSize {
+        width: 100%;
+    }
+
     .bigSize .tText {
         font-size: 6vh;
         padding-bottom: 4vh;
     }
 
     .bigSize .bigTitle {
-        left: -30vh;
+        width: 100vh;
+        left: -110px;
+        text-align: center;
+        justify-content: center;
     }
 
     .bigSize .artikel {
@@ -358,7 +373,9 @@ anthrazit: #201d14
     }
 }
 
-@media (max-height: 600px) and (max-width: 400px) {
+
+/* @media (max-width: 530px) and (max-height: 700px) { */
+@media (max-width: 530px) {
     
     .bigSize {
         display: block;
@@ -406,6 +423,8 @@ anthrazit: #201d14
         color: #fef7ea;
         left: 0;
         height: auto;
+        position: absolute;
+        align-items: center;
     }
 
     .smallSize .title {
@@ -427,6 +446,8 @@ anthrazit: #201d14
         display: none; /* Auch diese Info ist doppelt vorhanden, deswegen ausgeblendet */
     }
 }
+
+
 
 
 
