@@ -1,0 +1,216 @@
+/* 
+Farben
+Beige: #fef7ea
+rot: #ed322d
+anthrazit: #201d14
+*/
+/*
+.body {
+    margin: 0;
+}
+*/
+.container {
+    background: #fef7ea;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    max-width: 640px;
+    height: 794px;
+    margin: 0 auto;
+    padding-top: 10px;
+    color: #201d14;
+    /*background: url(img/the-new-typography.jpg);
+    background-size: cover;*/
+    /* lösche letzte 2 Zeilen */
+    
+
+
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+        animation-delay: 3s;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.inner {
+    text-transform: uppercase;
+    transform: rotate(-16.81deg);
+}
+
+
+/* ---------------- */
+/* ---- Titel ----- */
+/* ---------------- */
+
+.bigT {
+    /* float:left; */
+    position: absolute;
+    left: 20px;
+    font-size: 879px;
+    font-weight: 900;
+    color: #ed322d;
+    margin-top: -304px;
+    top: -100%;
+    padding-top: 28px;
+    height: 100%;
+    margin-left: 53px;
+    z-index: -1;
+    transition: all .8s ease-out;
+}
+
+.bigSize {
+    margin-left: 93px;
+    margin-top: -20px;
+    position: relative;
+    left: -200%;
+    -webkit-animation: slideTitle 0.5s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slideTitle 0.5s forwards;
+    animation-delay: 0.8s;
+}
+
+.bigSize .artikel {
+    font-size: 65px;
+    margin: 0;
+    padding-left: 8px;
+}
+
+.bigSize .adj {
+    font-size: 105px;
+    margin: 0;
+    margin-top: -27px;
+    margin-left: 4px;
+}
+
+.bigSize .tText {
+    font-size: 70px;
+    color: #fef7ea;
+    margin-top: -20px;
+    padding-left: 11px;
+    letter-spacing: -1.2px;
+}
+
+@-webkit-keyframes slideTitle {
+    100% { left: 0; }
+}
+
+@keyframes slideTitle {
+    100% { left: 0; }
+}
+
+
+/* ----------------- */
+/* -- Text rechts -- */
+/* ----------------- */
+
+.smallSize {
+    float: right;
+    position: absolute;
+    right: -120%;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide 0.5s forwards;
+    animation-delay: 1.3s;
+}
+
+.smallSize .name {
+    font-size: 22px;
+}
+
+.smallSize .title {
+    font-size: 8px;
+    text-transform: none;
+    font-size: 12px;
+    margin-top: -18px;
+    letter-spacing: -0.3px;
+}
+
+.smallSize .years {
+    font-size: 40px;
+    margin-top: -10px;
+    margin-left: -3px;
+    letter-spacing: 0;
+}
+
+@-webkit-keyframes slide {
+    100% { right: 45px;
+        margin-top: -56px;
+        letter-spacing: -1px; }
+}
+
+@keyframes slide {
+    100% { right: 45px; 
+        margin-top: -56px;
+        letter-spacing: -1px;}
+}
+
+/* ------------------ */
+/* --- black bars --- */
+/* ------------------ */
+
+.blackBar .bar1, 
+.blackBar .bar2 {
+    background: #201d14;
+    color: #fef7ea;
+    position: relative;
+    left: -200%;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide2 0.5s forwards;
+    animation-delay: 2s;
+}
+
+.blackBar .bar1 {
+    font-size: 41px;
+    letter-spacing: 6px;
+    font-weight: bolder;
+    margin-left: -84px;
+    margin-top: 235px;
+    /* opacity: 0.5; */
+    z-index: 3;
+}
+
+@-webkit-keyframes slide2 {
+    100% { left: 0; }
+}
+
+@keyframes slide2 {
+    100% { left: 0; }
+}
+
+.blackBar .bar1 p {
+    padding: 10px 47px;
+}
+
+.blackBar .bar2 {
+    font-size: 33px;
+    margin-left: -110px;
+    margin-top: -6px;
+    /* opacity: 0.5; */
+    letter-spacing: 1px;
+    position: relative;
+    z-index: -2;
+    animation-delay: 2.2s;
+}
+
+.blackBar .bar2 p {
+    padding: 14px 53px;
+}
